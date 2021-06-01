@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-replica-server
+eureka:
+  instance:
+    hostname: niranjan-hostname1
+  client:
+    service-url:
+      defaultZone: http://niranjan-hostname2:8762/eureka
+    register-with-eureka: true
+    fetch-registry: true
+server:
+  port: 8761
